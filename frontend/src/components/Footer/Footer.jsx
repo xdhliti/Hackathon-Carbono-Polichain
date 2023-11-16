@@ -20,8 +20,9 @@ function Footer() {
                 <p2><strong>Endereço:</strong> 123 Rua da Amostra, Cidade, País</p2> <br/> <br/>
                 <p2><strong>Telefone:</strong> +1 (123) 456-7890</p2> <br/> <br/>
                 <p2><strong>Email:</strong> contato@exemplo.com</p2> <br/>
-    <img src="./public/Imagem_poli.png" class="img-fluid" style="max-width: 20%;" alt="imagem poli" >
+    <img src="./public/Imagem_poli.png" class="img-fluid" style="max-width: 20%;" alt="imagem poli" />
     </>
+  )
 };
 
 export default Footer;

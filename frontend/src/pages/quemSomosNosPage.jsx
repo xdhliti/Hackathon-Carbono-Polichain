@@ -28,4 +28,4 @@ const QuemSomosNos = () => {
   );
 }
 
-export default AboutUs;
+export default QuemSomosNos;

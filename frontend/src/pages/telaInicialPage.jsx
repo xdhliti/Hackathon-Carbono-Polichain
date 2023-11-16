@@ -48,4 +48,4 @@ function TelaInicial() {
   );
 }
 
-export default App;
+export default TelaInicial;
