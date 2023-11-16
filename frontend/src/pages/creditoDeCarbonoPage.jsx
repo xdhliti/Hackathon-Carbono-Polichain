@@ -1,6 +1,6 @@
 // src/pages/DoacoesSustentaveisPage.js
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const CreditoDeCarbonoPage = () => {
 
