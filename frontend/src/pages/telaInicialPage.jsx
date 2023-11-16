@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function TelaInicial() {
   return (
@@ -48,4 +47,4 @@ function TelaInicial() {
   );
 }
 
-export default App;
+export default TelaInicial;

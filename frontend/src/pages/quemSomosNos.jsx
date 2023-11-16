@@ -1,8 +1,7 @@
 // src/AboutUs.js
 import React from 'react';
-  
-const QuemSomosNos = () => {
 
+const AboutUs = () => {
   return (
     <div>
       <header>
@@ -27,4 +26,4 @@ const QuemSomosNos = () => {
   );
 }
 
-export default QuemSomosNos;
+export default AboutUs;

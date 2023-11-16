@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './FormDeContato.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Footer() {
 
