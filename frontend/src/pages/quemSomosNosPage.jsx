@@ -1,7 +1,7 @@
 // src/AboutUs.js
 import React from 'react';
 
-const AboutUs = () => {
+const QuemSomosNos = () => {
   return (
     <div>
       <header>
