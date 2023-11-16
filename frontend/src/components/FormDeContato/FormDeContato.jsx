@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './FormDeContato.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Footer() {
 
@@ -7,7 +8,7 @@ function Footer() {
   return (
     <>
       <div class="container mt-4">
-    <h1 class="text-center text-light">Formulário de Reclamações</h1>
+    <h1 class="text-center text-light">Formulário de comentários</h1>
     <p class="text-center text-light">Por favor, omplete o formulário abaixo para nos enviar algum comentário.</p>
 
     <div class="row justify-content-center">
