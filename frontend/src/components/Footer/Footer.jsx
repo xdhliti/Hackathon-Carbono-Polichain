@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import React from 'react'
 import './Footer.css'
 
 function Footer() {
@@ -6,43 +7,21 @@ function Footer() {
 
   return (
     <>
-      <div class="container mt-4">
-    <h1 class="text-center text-light">Formulário de Reclamações</h1>
-    <p class="text-center text-light">Por favor, omplete o formulário abaixo para nos enviar algum comentário.</p>
-
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <form>
-                <div class="mb-3">
-                    <label for="nome" class="form-label text-light">Nome:</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label text-light">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Seu Email">
-                </div>
-                <div class="mb-3">
-                    <label for="assunto" class="form-label text-light">Assunto:</label>
-                    <select class="form-select" id="assunto">
-                        <option value="opcao0"></option>
-                        <option value="opcao1">Informações adicionais</option>
-                        <option value="opcao2">Sugestões</option>
-                        <option value="opcao3">Reclamações</option>
-                        <option value="opcao4">Outros</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="comentario" class="form-label text-light">Comentário:</label>
-                    <textarea class="form-control" id="comentario" rows="4" placeholder="Seu comentário"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar Reclamação</button>
-            </form>
-        </div>
-    </div>
-</div>
+    <div class="container"/>
+        <div class="row"/>
+            <div class="col-md-6"/>
+                <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+                <h3>Sobre Nós</h3> <br/> 
+                <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis purus et nunc vestibulum, sed eleifend tortor dignissim.</p2> <br/> <br/> <br/> <br/> <br/>
+            <div class="col-md-6"/>
+                <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+                <h3>Contato</h3> <br/>
+                <p2><strong>Endereço:</strong> 123 Rua da Amostra, Cidade, País</p2> <br/> <br/>
+                <p2><strong>Telefone:</strong> +1 (123) 456-7890</p2> <br/> <br/>
+                <p2><strong>Email:</strong> contato@exemplo.com</p2> <br/>
+    <img src="./public/Imagem_poli.png" class="img-fluid" style="max-width: 20%;" alt="imagem poli" >
     </>
-  )
-}
+};
 
 export default Footer;
 
