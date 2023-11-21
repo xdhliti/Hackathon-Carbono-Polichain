@@ -13,10 +13,15 @@ import App from './App.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-    <Header />
-      <App />
-    </BrowserRouter>
+    <WagmiProvider client={wagmiClient}>
+      <RainbowKitProvider chains={chains}>
+        <BrowserRouter>
+          <Header />
+          <App />
+        </BrowserRouter>
+      </RainbowKitProvider>
+    </WagmiProvider>
+  
   </React.StrictMode>,
   document.getElementById('root')
 );
