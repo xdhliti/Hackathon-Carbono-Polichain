@@ -11,10 +11,6 @@ const DoacoesSustentaveisPage = () => {
           Nessa aba, você pode fazer doações seguras para ajudar pequenos e médios produtores alimentícios. A incorporação de blockchain nesse contexto pode trazer uma série de benefícios, incluindo transparência, rastreabilidade e eficiência nas transações.
         </p>
       </header>
-
-      <section>
-        {/* ai a gent eimplementa com blockcahin */}
-      </section>
     </div>
   );
 }
