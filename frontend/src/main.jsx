@@ -1,29 +1,48 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import BolsaVerdePage from './pages/BolsaVerdePage';
+import BlockchainPage from './pages/BlockchainPage';
+import CreditoDeCarbonoPage from './pages/CreditoDeCarbonoPage';
+import DoacoesSustentaveisPage from './pages/DoacoesSustentaveisPage';
+import NoMatch from './pages/NoMatch';
+import QuemSomosNosPage from './pages/QuemSomosNosPage';
+import PerfilPage from './pages/PerfilPage';
+import FaleConoscoPage from './pages/FaleConoscoPage';
+import LoginPage from './pages/LoginPage';
+import TelaInicialPage from './pages/TelaInicialPage';
 
-import Header from './components/Header/Header.jsx';
-import BlockchainPage from './pages/blockchainPage.jsx';
-import BolsaVerdePage from './pages/bolsaVerdePage.jsx';
-import QuemSomosNos from './pages/quemSomosNosPage.jsx';
-import DoacoesSustentaveisPage from './pages/doacoesSustentaveisPage.jsx';
-import TelaInicial from './pages/telaInicialPage.jsx';
-import CreditoDeCarbonoPage from './pages/creditoDeCarbonoPage.jsx';
-import App from './App.jsx';
-import Home from './index.jsx';
+import "./index.css";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
   <React.StrictMode>
-    <WagmiProvider client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
-        <BrowserRouter>
-          <Header />
-          <Home />
-          <App />
-        </BrowserRouter>
-      </RainbowKitProvider>
-    </WagmiProvider>
-  
-  </React.StrictMode>,
-  document.getElementById('root')
+    <BrowserRouter>
+      <nav>
+        <Link to="/" element={<TelaInicialPage />} > TelaInicialPage  </Link>
+        <Link to="/quemSomosNos" element={<QuemSomosNosPage />} > QuemSomosNosPage  </Link>
+        <Link to="/blockchain" element={<BlockchainPage />} > BlockchainPage  </Link>
+        <Link to="/faleConosco" element={<FaleConoscoPage />} > FaleConoscoPage  </Link>
+        <Link to="/creditoDeCarbono" element={<CreditoDeCarbonoPage />} > CreditoDeCarbonoPage  </Link>
+        <Link to="/bolsaVerde" element={<BolsaVerdePage />} > BolsaVerdePage  </Link>
+        <Link to="/doacoesSustentaveis" element={<DoacoesSustentaveisPage />} > DoacoesSustentaveisPage  </Link>
+        <Link to="/login" element={<LoginPage />} > LoginPage  </Link>
+        <Link to="/perfil" element={<PerfilPage />} > PerfilPage  </Link>
+        <Link to="*" element={<NoMatch />} > NoMatch  </Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<TelaInicialPage />} />
+        <Route path="quemSomosNos" element={<QuemSomosNosPage />} />
+        <Route path="blockchain" element={<BlockchainPage />} />
+        <Route path="faleConosco" element={<FaleConoscoPage />} />
+        <Route path="creditoDeCarbono" element={<CreditoDeCarbonoPage />} />
+        <Route path="bolsaVerde" element={<BolsaVerdePage />} />
+        <Route path="doacoesSustentaveis" element={<DoacoesSustentaveisPage />} />
+        <Route path="login" element={<LoginPage />} />
+        <Route path="perfil" element={<PerfilPage />} />
+        <Route path="*" element={<NoMatch />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
 );
