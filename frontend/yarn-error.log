@@ -1,0 +1,61 @@
+Arguments: 
+  /home/xdhliti/.nvm/versions/node/v20.8.0/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /home/xdhliti/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/home/xdhliti/.local/bin:/home/xdhliti/.nvm/versions/node/v20.8.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/MinGW/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Users/Guilherme Jacule/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Guilherme Jacule/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/Guilherme Jacule/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/Guilherme Jacule/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/Guilherme Jacule/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/Guilherme Jacule/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Guilherme Jacule/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/MinGW/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Users/Guilherme Jacule/AppData/Roaming/npm:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.8.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/xdhliti/.cache/yarn/v6/npm-caniuse-lite-1.0.30001563-aa68a64188903e98f36eb9c56e48fba0c1fe2a32-integrity/node_modules/caniuse-lite/.yarn-metadata.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "frontend",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+      "preview": "vite preview"
+    },
+    "dependencies": {
+      "@rainbow-me/rainbowkit": "^1.2.1",
+      "bootstrap": "^5.3.2",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-router-dom": "^6.18.0",
+      "viem": "^1.19.4",
+      "wagmi": "^1.4.7"
+    },
+    "devDependencies": {
+      "@types/react": "^18.2.15",
+      "@types/react-dom": "^18.2.7",
+      "@vitejs/plugin-react": "^4.0.3",
+      "eslint": "^8.45.0",
+      "eslint-plugin-react": "^7.32.2",
+      "eslint-plugin-react-hooks": "^4.6.0",
+      "eslint-plugin-react-refresh": "^0.4.3",
+      "vite": "^4.4.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

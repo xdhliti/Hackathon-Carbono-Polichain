@@ -10,6 +10,7 @@ import DoacoesSustentaveisPage from './pages/doacoesSustentaveisPage.jsx';
 import TelaInicial from './pages/telaInicialPage.jsx';
 import CreditoDeCarbonoPage from './pages/creditoDeCarbonoPage.jsx';
 import App from './App.jsx';
+import Home from './index.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <RainbowKitProvider chains={chains}>
         <BrowserRouter>
           <Header />
+          <Home />
           <App />
         </BrowserRouter>
       </RainbowKitProvider>
